@@ -1,27 +1,46 @@
 ###Slide 3
+# greet = "hello world"
+# print(greet)
 
+###Slide 14 - Data types
+a_string = "hello"
+a_int = 7
+a_float = 3.14
+a_bool = True
 
-###Slide 13 - Data types
+# print(type('Hello'))
+# bob = 'bob2.0'
+# a = bob
+# print(a)
 
-
-
-###Slide 15 - Getting Input
-
+###Slide 16 - Getting Input
+# name = input("Enter your name: ")
+# print(name)
 
 
 ##Slide 16 Activity
-
+# first_name = input("Enter your first name: ")
+# last_name = input("Enter your last name: ")
+# print('hello', first_name, last_name)
 
 ####Slide 17 Recasting Input
+# a = input("Enter a number: ")
+# b = input("Enter another number: ")
+# print(a+b)
+
+# a = float(input("Enter a number: "))
+# b = int(input("Enter another number: "))
+# print(a+b)
 
 
 
+###Slide 21 Outputting multiple data
+name = input("Enter your name: ")
+age = input("How old are you: ")
 
-###Slide 20 Outputting multiple data
-# name = input("Enter your name: ")
-# print() #Using commas to seperate data
-# print() # Using + to concatenate data into one string
-# print() # Using f-strings
+print('hello', 5, 6, 7) #Using commas to separate data
+print('hello ' + name + name) # Using + to concatenate data into one string
+print(f'Hello {name}, you are {age} years old.') # Using f-strings
 
 ###Slide 21 Operations
 # a =
