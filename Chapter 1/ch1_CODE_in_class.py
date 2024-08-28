@@ -35,21 +35,24 @@ a_bool = True
 
 
 ###Slide 21 Outputting multiple data
-name = input("Enter your name: ")
-age = input("How old are you: ")
+# #name = input("Enter your name: ")
+# age = input("How old are you: ")
+#
+# print('hello', 5, 6, 7) #Using commas to separate data
+# print('hello ' + name + name) # Using + to concatenate data into one string
+# print(f'Hello {name}, you are {age} years old.') # Using f-strings
 
-print('hello', 5, 6, 7) #Using commas to separate data
-print('hello ' + name + name) # Using + to concatenate data into one string
-print(f'Hello {name}, you are {age} years old.') # Using f-strings
+###Slide 22 Operations
+# a = int(input("Enter the first number: "))
+# b = int(input("Enter the second number: "))
+# c = int(input("Enter thr sthirddigit: "))
 
-###Slide 21 Operations
-# a =
-# b =
 
-# print(a+b)
+# print(a+ b)
 # print(a-b)
 # print(a*b)
 # print(a/b)
+# print(a**b)
 
 
 ##Slide 25
@@ -60,7 +63,7 @@ print(f'Hello {name}, you are {age} years old.') # Using f-strings
 
 ##Syntax Error - Program does not execute at all
 # length = int(input("Enter the length: "))
-# print{legnth}
+#     print(length)
 
 
 ##Sementic Error
@@ -68,7 +71,10 @@ print(f'Hello {name}, you are {age} years old.') # Using f-strings
 # print("The area of the square is ", 2*length)
 
 
+
+
 ##Slide 26
+
  # print("Hello")
 
 
@@ -79,7 +85,7 @@ print(f'Hello {name}, you are {age} years old.') # Using f-strings
 
 ##Slide 27
 ##Traceback
-# def say(name):
-#     print('Hello, ' + nam)
-#
-# say('Michael')
+def say(name):
+    print('Hello, ' + name)
+
+say('Michael')
