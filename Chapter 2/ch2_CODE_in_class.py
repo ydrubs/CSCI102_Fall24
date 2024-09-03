@@ -1,47 +1,62 @@
 # ##Slide 2
-# age = 122 #age of the oldest ever living person
-# #give the age of the person
+age = 122 #age of the oldest ever living person
+
+#give the age of the person
 # print(age)
 #
-# """Sometimes there is a need to explain or document a portrion of code beyond one line.
-# For this we can use a docstring to extend to multiple lines.
-# Docstrings are also used to attribute programs and explain functions."""
+"""
+Sometimes there is a need to explain or document a portion of code beyond one line.
+For this we can use a docstring to extend to multiple lines.
+Docstrings are also used to attribute programs and explain functions.
+"""
 
 ##Slide 5
+a = 2
+b = a
+# print(id(a))
+# print(id(b))
 
+# c = float(input("how old are you: "))
+# print(c, type(c))
+
+# print(234_5_6_7_8_9_0)
 
 
 
 
 ##Slide 7
+# print('A wise person once said, fail often')
+# print("This is a 'bad' \nquote")
+
+
 # print("A double quoted string")
 # print('does the same thing as a single quoted string')
 #
 # print("However, there'll be times when a string needs to include a single quote within it, so a double quote is useful.")
 
 ##Printing Multiline strings
-# welcomeText = '''Welcome to my game!
-# I will think of a number from 1 to 100, and you must try
-# to guess it. I'll tell you if your guess is too small
-# or too large.
-# Enter an integer between 1 and 100 when prompted.'''
+welcomeText = '''Welcome to my game!
+            I will think of a number from 1 to 100, and you must try
+            to guess it. I'll tell you if your guess is too small
+or too large.
+Enter an integer between 1 and 100 when prompted.'''
 # print(welcomeText)
 
 
 ##Slide 8
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
-# print("2. hello\b " + ' there')
-# print("3. hello\n " + ' there')
-# print("4. hello\t " + ' there')
-# print("5. hello\\ " + ' there')
-# print("6. hello\' " + ' there')
-# print("7.hello\" " + ' there')
+print("2. hello\b " + ' there')
+print("3. hello\n " + ' there')
+print("4. hello\t " + ' there')
+print("5. hello\\ " + ' there')
+print("6. hello\' " + 'there')
+print("7.hello\" " + ' there')
 
-# s1 = "Green eggs and ham"
-# s2 = 'Sam-I-am'
-# s3 = 'I like the backslash (\\) character!'
-# s4 = "I do not like them\n Sam-I-am!"
-# print(s3)
+s1 = "Green eggs and ham"
+s2 = 'Sam-I-am'
+s3 = 'I like the backslash (\\) character!'
+s4 = "I do not like them\n Sam-I-am!"
+print(s4)
 
 ###Activity - slide 9 Experiment with escape character in the space below
 
