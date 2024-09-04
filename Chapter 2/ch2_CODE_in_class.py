@@ -98,7 +98,7 @@ NAME = 'yuriy'
 print(NAME)
 
 my_name = 'bob'
-age = 0
+age = 1
 
 ###Activity
 
