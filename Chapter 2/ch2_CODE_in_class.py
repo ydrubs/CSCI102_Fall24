@@ -35,28 +35,28 @@ b = a
 # print("However, there'll be times when a string needs to include a single quote within it, so a double quote is useful.")
 
 ##Printing Multiline strings
-welcomeText = '''Welcome to my game!
-            I will think of a number from 1 to 100, and you must try
-            to guess it. I'll tell you if your guess is too small
-or too large.
-Enter an integer between 1 and 100 when prompted.'''
+# welcomeText = '''Welcome to my game!
+#             I will think of a number from 1 to 100, and you must try
+#             to guess it. I'll tell you if your guess is too small
+# or too large.
+# Enter an integer between 1 and 100 when prompted.'''
 # print(welcomeText)
 
 
 ##Slide 8
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
-print("2. hello\b " + ' there')
-print("3. hello\n " + ' there')
-print("4. hello\t " + ' there')
-print("5. hello\\ " + ' there')
-print("6. hello\' " + 'there')
-print("7.hello\" " + ' there')
-
-s1 = "Green eggs and ham"
-s2 = 'Sam-I-am'
-s3 = 'I like the backslash (\\) character!'
-s4 = "I do not like them\n Sam-I-am!"
-print(s4)
+# print("2. hello\b " + ' there')
+# print("3. hello\n " + ' there')
+# print("4. hello\t " + ' there')
+# print("5. hello\\ " + ' there')
+# print("6. hello\' " + 'there')
+# print("7.hello\" " + ' there')
+#
+# s1 = "Green eggs and ham"
+# s2 = 'Sam-I-am'
+# s3 = 'I like the backslash (\\) character!'
+# s4 = "I do not like them\n Sam-I-am!"
+# print(s4)
 
 ###Activity - slide 9 Experiment with escape character in the space below
 
@@ -65,30 +65,49 @@ print(s4)
 ##Slide 10
 # print("Hello")
 # print("there")
+# #
 #
-# print("Hello", end=' ')
+# var = ':::;;;'
+# print("Hello", end=var)
 # print('there')
 
 
 ##Slide 11
-# name = 'Yoda'
-# age = 900
-# home_planet = 'Dagobah'
+name = 'Yoda'
+age = 900
+home_planet = 'Dagobah'
 #
-# print()
-# print()
+# print(name, age, home_planet)
+# print(name, age, home_planet, sep = '\n')
+# print(name, age, home_planet, sep = 'Iluffstarwars')
 # print()
 # print()
 
-###Activity from slide 13
+##slide 12
+# def = 2 # not allowed
+# 1age = 30 # Can't do
 
+age1 = 30
+# $name = 'Yuriy'
+
+my_name = 'Yuriy'
+_name = 'Yuriy'
+# @name = "yuriy" #can't do
+
+NAME = 'yuriy'
+print(NAME)
+
+my_name = 'bob'
+age = 0
+
+###Activity
 
 
 ##Slide 14
-# first_name = "Obi-Wan"
-# last_name = "Kenobi"
-# full_name = pass
-# print(pass)
+first_name = "Obi-Wan"
+last_name = "Kenobi"
+full_name = first_name + ' ' +  last_name
+print(full_name)
 
 
 # #Reassigning Variables to new values
