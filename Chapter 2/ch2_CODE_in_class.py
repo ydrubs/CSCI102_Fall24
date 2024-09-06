@@ -98,45 +98,63 @@ NAME = 'yuriy'
 print(NAME)
 
 my_name = 'bob'
-age = 1
+age = 0
 
 ###Activity
 
 
 ##Slide 14
-first_name = "Obi-Wan"
-last_name = "Kenobi"
-full_name = first_name + ' ' +  last_name
-print(full_name)
+# first_name = "Obi-Wan"
+# last_name = "Kenobi"
+# full_name = first_name + ' ' +  last_name
+# print(full_name)
 
 
 # #Reassigning Variables to new values
-# x = 125
-# y = x / 5    # y defined in terms of x
+x = 125
+y = x / 5    # y defined in terms of x
+# print(type(y))
+
 # print(x, y)
 # #
-# x = 100    # redefining x
+x = 100    # redefining x
 # print(x, y)
 # #
-# y = 2 * y    # redefining y by modifying
+y = 2 * y    # redefining y by modifying
 # print(x, y)
 
 ##Slide 15
-# first_name = "Yuriy"
-# last_name = "Drubinskiy"
+first_name = 5
+last_name = 6
 #
-# print(pass)
-# print(pass)
+# print(first_name, last_name)
+# print(first_name + last_name )
 
 
-# s1 = 'waaz'
-# s2 = 'a'
-# s3 = 'p'
-# print(pass)
+s1 = 'waaz'
+s2 = 'a'
+s3 = 'p'
+# print((s1 + s2*5 +s3 + ' :) ')*3)
 # print(pass)
 
 
 ###ACTIVITY slide 16
+symbol1 = '^'
+symbol2 = '#'
+# print((symbol1*10 + '\n') + ((symbol2*10 + '\n')*3) + (symbol1*10 + '\n'))
+
+##Operations
+a = 3
+b = 4
+# print(a**b)
+#
+# print(b/a)
+# print(b//a)
+
+# print(a/b) # 3/4
+# print(a//b)
+
+print(11%3)
 
 
 ##Slide 18 - Examples of right associative
