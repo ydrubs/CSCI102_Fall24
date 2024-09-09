@@ -87,18 +87,18 @@ home_planet = 'Dagobah'
 # def = 2 # not allowed
 # 1age = 30 # Can't do
 
-age1 = 30
+# age1 = 30
 # $name = 'Yuriy'
 
-my_name = 'Yuriy'
-_name = 'Yuriy'
+# my_name = 'Yuriy'
+# _name = 'Yuriy'
 # @name = "yuriy" #can't do
 
-NAME = 'yuriy'
-print(NAME)
-
-my_name = 'bob'
-age = 0
+# NAME = 'yuriy'
+# print(NAME)
+#
+# my_name = 'bob'
+# age = 0
 
 ###Activity
 
@@ -154,7 +154,7 @@ b = 4
 # print(a/b) # 3/4
 # print(a//b)
 
-print(11%3)
+# print(11%3)
 
 
 ##Slide 18 - Examples of right associative
@@ -179,10 +179,17 @@ print(11%3)
 # pass
 
 #Slide 23
-
-
+# print(round(6.75))
+# print(round(6.75,0))
+# print(round(6.75,1))
+# print(round(6.75,2))
+# print(round(6.75,3))
 
 ##Slide 24
+# print(chr(ord('a')))
+print(ord('~')+100)
+print(chr(123457))
+
 # s1 = "Mary Poppins"
 # s2 = "Freddy"
 
@@ -196,10 +203,11 @@ print(11%3)
 # print(chr(0x265e))
 # print(chr(0x250C))
 # print(chr(103436))
-# print(int(0x265e))
 
+# print(int(0x265e))
+#
 # print('The ASCII code for the letter \'a\' is ' + str(ord('a')))
 
-# for i in range (9000, 10000):
-#     print(chr((i)), end = ', ')
+for i in range (9000, 10000):
+    print(chr((i)), end = ', ')
 
