@@ -166,17 +166,17 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 # pass
 # print(d)
 
-##Slide 25
+##Slide 26
 
 
 
-##slide 27 ACTIVITY
+##slide 28 ACTIVITY
 
 
 
 
 
-##Slide 28
+##Slide 29
 # theSum = 0.0
 # data = input('Enter a number or just enter to quit: ')
 #
@@ -187,7 +187,7 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #     print('The sum is', theSum)
 
 
-##Slide 29
+##Slide 30
 # theSum = 0.0
 # while pass:
 #     data = input("Enter a number or just enter to quit: ")
@@ -198,7 +198,7 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #     theSum += number
 #     print("The sum is", theSum)
 
-##Slide 31
+##Slide 32
 # while True:
 #     number = int(input("Enter the numeric grade: "))
 #     if pass:
@@ -209,7 +209,7 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #         print(number) # Just echo the valid input
 
 
-##Slide 32
+##Slide 33
 # done = False
 #
 # while not done:
@@ -223,7 +223,7 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #         print(number) # Just echo the valid input
 
 
-##Slide 33
+##Slide 34
 #Fail to break loop
 # while True:
 #     number = int(input('Enter the numeric grade: '))
@@ -254,7 +254,7 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 # pass
 
 
-##Slide 35
+##Slide 36
 ##Dice rolling simulator
 # pass
 # pass
