@@ -1,34 +1,39 @@
 ##Slide 5 - One way selection statement
 # name = input("Enter your username: ")
-#pass
+# if name == 'admin':
 #     print("Access granted - secret area unlocked")
-#
+# #
 # print()
 # print("Welcome feel free to explore ")
-
-
+#
+#
 
 
 #Slide 6 - If/else statement
 # name = input("Enter your username: ")
-#pass
+# if name == 'admin':
 #     print("Access granted - secret area unlocked")
-#pass
+# else:
 #     print("Incorrect username")
 
 
 
+
 ##Slide 7: Multi-way selection
-# number = int(input('Enter the numeric grade: '))
-# if number > 89:
-#     letter = 'A'
-# pass number > 79:
-#     letter = 'B'
-# pass number > 69:
-#     letter = 'C'
-# pass
-#     letter = 'F'
-# print('The letter grade is', letter)
+number = int(input('Enter the numeric grade: '))
+if number > 100:
+    letter = 'invalid input'
+elif number > 89:
+    letter = 'A'
+elif number > 79:
+    letter = 'B'
+elif number > 69:
+    letter = 'C'
+else:
+    letter = 'F'
+
+print('The letter grade is', letter)
+
 
 
 # print("What color is the traffic light?")
@@ -45,6 +50,13 @@
 
 
 ##Slide 8 ACTIVITY
+mood = input("How are you feeling?")
+if mood == 'okay':
+    print("have a good day")
+elif mood == 'tired':
+    print("Get some rest")
+else:
+    print('not sure what that is')
 
 
 
@@ -68,7 +80,7 @@
 # print(not b or (a and b)) #
 # print(a and not b or b and not a) #
 
-#Write your own challening logic statement, make it as long as you want
+#Write your own challenging logic statement, make it as long as you want
 
 
 
