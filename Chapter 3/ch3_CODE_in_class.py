@@ -20,19 +20,19 @@
 
 
 ##Slide 7: Multi-way selection
-number = int(input('Enter the numeric grade: '))
-if number > 100:
-    letter = 'invalid input'
-elif number > 89:
-    letter = 'A'
-elif number > 79:
-    letter = 'B'
-elif number > 69:
-    letter = 'C'
-else:
-    letter = 'F'
-
-print('The letter grade is', letter)
+# number = int(input('Enter the numeric grade: '))
+# if number > 100:
+#     letter = 'invalid input'
+# elif number > 89:
+#     letter = 'A'
+# elif number > 79:
+#     letter = 'B'
+# elif number > 69:
+#     letter = 'C'
+# else:
+#     letter = 'F'
+#
+# print('The letter grade is', letter)
 
 
 
@@ -50,38 +50,38 @@ print('The letter grade is', letter)
 
 
 ##Slide 8 ACTIVITY
-mood = input("How are you feeling?")
-if mood == 'okay':
-    print("have a good day")
-elif mood == 'tired':
-    print("Get some rest")
-else:
-    print('not sure what that is')
+# mood = input("How are you feeling?")
+# if mood == 'okay':
+#     print("have a good day")
+# elif mood == 'tired':
+#     print("Get some rest")
+# else:
+#     print('not sure what that is')
 
 
 
 ##Slide 9
-# x = 10
-# y = 5
-# z = 2
+x = 10
+y = 5
+z = 2
 #
-# print() #
-# print() #
-# print() #
-# print() #
+# print(x == y) #False
+# print(x > y) #True
+# print(y > x/z) #
+# print(x != y) #True
 # print() #
 
 ##Slide 11
-# a = True
-# b = False
+a = True
+b = False
 
-# print(a or(a and b)) #
-# print(b and (a or b)) #
-# print(not b or (a and b)) #
-# print(a and not b or b and not a) #
+# print(a or(a and b)) #True
+# print(b and (a or b)) #False
+# print(not b or (a and b)) #True
+# print(a and not b or b and not a) #False
 
 #Write your own challenging logic statement, make it as long as you want
-
+print(b and not a or (not a and not b or not a)) #False
 
 
 ##Slide 11
@@ -93,15 +93,29 @@ else:
 
 ##slide 12
 # grade = int(input("What is your grade: "))
-# if pass:
+# if grade >= 90 and grade < 101:
 #     print('Nice Job')
-# elif pass:
+# elif grade < 90 and grade >= 80:
 #     print('Not bad')
-# elif pass:
+# elif grade <= 79 and grade >= 70:
 #     print('There is room for improvement')
 # else:
 #     print("Better luck next time")
 
+##WRAP UP ACTIVITY
+valid_user = 'user123'
+is_active = True
+
+user = input("Enter username: ")
+
+if user == valid_user and is_active:
+    print('access granted')
+
+elif user == valid_user and is_active != True:
+    print('access denied')
+
+else:
+    print('no user found')
 
 
 ##Slide 15
@@ -110,6 +124,8 @@ else:
 # pass
 # pass
 # pass
+
+
 
 ##Slide 17
 # number = 1
