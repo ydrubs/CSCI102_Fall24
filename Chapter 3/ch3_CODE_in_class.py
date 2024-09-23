@@ -61,9 +61,9 @@
 
 
 ##Slide 9
-x = 10
-y = 5
-z = 2
+# x = 10
+# y = 5
+# z = 2
 #
 # print(x == y) #False
 # print(x > y) #True
@@ -72,8 +72,8 @@ z = 2
 # print() #
 
 ##Slide 11
-a = True
-b = False
+# a = True
+# b = False
 
 # print(a or(a and b)) #True
 # print(b and (a or b)) #False
@@ -81,7 +81,7 @@ b = False
 # print(a and not b or b and not a) #False
 
 #Write your own challenging logic statement, make it as long as you want
-print(b and not a or (not a and not b or not a)) #False
+# print(b and not a or (not a and not b or not a)) #False
 
 
 ##Slide 11
@@ -103,46 +103,55 @@ print(b and not a or (not a and not b or not a)) #False
 #     print("Better luck next time")
 
 ##WRAP UP ACTIVITY
-valid_user = 'user123'
-is_active = True
+# valid_user = 'user123'
+# is_active = True
+#
+# user = input("Enter username: ")
+#
+# if user == valid_user and is_active:
+#     print('access granted')
+#
+# elif user == valid_user and is_active != True:
+#     print('access denied')
+#
+# else:
+#     print('no user found')
 
-user = input("Enter username: ")
 
-if user == valid_user and is_active:
-    print('access granted')
 
-elif user == valid_user and is_active != True:
-    print('access denied')
-
-else:
-    print('no user found')
-
+"""9/23/24"""
 
 ##Slide 15
-# a = 4
-
-# pass
-# pass
-# pass
+# a = 10
+#
+# for a in range(1):
+#     # print("It's alive!", sep = '****' )
+#     print(type(range(1)))
+#     print(a)
 
 
 
 ##Slide 17
 # number = 1
-# pass
-# pass
-# pass
+# for i in range(4):
+#     print(number)
+#     number = number + 3
+#
+# print(number)
+
 
 ##Slide 18
 # number = 1
 # times_2 = 2
+#
+# print(number)
 # for i in range(5):
 #     number = number * times_2
 #     print(number)
 
 ##Slide 19
-# for
-# pass
+# for i in range(10):
+#     print(i, end = ' ')
 
 
 ##Equivelant to the following but twice as long
@@ -160,11 +169,14 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 ...
 20 Mississippi
 """""
+# for i in range(21):
+#     print(i, end = ' Mississippi\n')
 
 
 ##Slide21
-# pass
-# pass
+stop = 20
+for i in range(10,20):
+    print(i)
 
 
 ##SLide 22
