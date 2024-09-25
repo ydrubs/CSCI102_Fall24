@@ -174,37 +174,64 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 
 ##Slide21
-stop = 20
-for i in range(10,20):
-    print(i)
-
+# stop = 20
+# for i in range(10,20):
+#     print(i)
+#
 
 ##SLide 22
 #Count by threes
+# for i in range(3,101,3):
+#     print(i, end = ' ')
 
 #Count backwards from 100
+# for i in range(101,1,-1):
+#     print(i)
+
 
 ##Slide 23
-# a = 5
-# b = 5
+a = 5
+b = 3
 # print(a, b)
 
-# pass
-# pass
+# a +=5
+# b +=5
 # print(a, b)
 
 
-# c = 2
-# d = 3
+c = 2
+d = 3
 # print(c, d)
 
-# pass
-# pass
+c *=5
+d **=2
 # print(c, d)
 
 
-# pass
-# print(d)
+# first_name = 'Bob'
+# first_name += 'Doe'
+# print(first_name)
+
+###EXTRA DEMO
+
+#Not the best solution
+# total = 0
+# add_one = 0
+# for i in range(1,101):
+#     total +=add_one
+#     add_one +=1
+# print(total)
+
+#Better solution
+# total = 0
+# for i in range(1,101):
+#     total +=i
+# print(total)
+
+####FIZZ BUZZ SOLUTION
+
+
+
 
 ##Slide 26
 
