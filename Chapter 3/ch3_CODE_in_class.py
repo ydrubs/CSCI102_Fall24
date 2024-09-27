@@ -229,16 +229,37 @@ d **=2
 # print(total)
 
 ####FIZZ BUZZ SOLUTION
-
+# for i in range(1,101):
+#     if i%3 == 0 and i%5 == 0:
+#         print('FizzBuzz')
+#     elif i%3 == 0: #There is no remainder
+#         print('Fizz')
+#     elif i%5 == 0:
+#         print("Buzz")
+#     else:
+#         print(i)
 
 
 
 ##Slide 26
-
+# stop = 1000
+# total = 0
+#
+# while total < stop:
+#     numb = int(input("Pretty Please enter a number: "))
+#     total += numb #instead of total = total + numb
+#     print(total)
 
 
 ##slide 28 ACTIVITY
-
+# stop = 1000
+# total = 1
+# numb = int(input("Pretty Please enter a number: "))
+# print(total)
+#
+# while total < stop:
+#     total += numb #instead of total = total + numb
+#     print(total)
 
 
 
@@ -247,7 +268,7 @@ d **=2
 # theSum = 0.0
 # data = input('Enter a number or just enter to quit: ')
 #
-# while pass:
+# while data !="":
 #     number = float(data)
 #     theSum += number
 #     data = input('Enter a number or just enter to quit: ')
@@ -315,7 +336,7 @@ d **=2
 #     if a > 500:
 #         print('Pow', a)
 
-##Slide 34
+##Slide 35
 # pass
 # pass
 # pass
