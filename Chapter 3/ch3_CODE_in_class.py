@@ -277,25 +277,27 @@ d **=2
 
 ##Slide 30
 # theSum = 0.0
-# while pass:
+# while True:
 #     data = input("Enter a number or just enter to quit: ")
-#     if data == pass:
-#         pass
+#     if data == '':
+#         break
 #
 #     number = float(data)
 #     theSum += number
 #     print("The sum is", theSum)
 
+
+
 ##Slide 32
 # while True:
 #     number = int(input("Enter the numeric grade: "))
-#     if pass:
-#         pass
+#     if 100 >= number >= 0:
+#         break
 #
 #     else:
 #         print("Error: grade must be between 100 and 0")
 #         print(number) # Just echo the valid input
-
+#
 
 ##Slide 33
 # done = False
@@ -304,7 +306,7 @@ d **=2
 #     number = int(input("Enter the numeric grade: "))
 #     if number >= 0 and number <= 100:
 #         print("Setting 'done' to True")
-#         pass
+#         done = True
 #
 #     else:
 #         print("Error: grade must be between 100 and 0")
@@ -312,11 +314,13 @@ d **=2
 
 
 ##Slide 34
-#Fail to break loop
+# Fail to break loop
 # while True:
 #     number = int(input('Enter the numeric grade: '))
 #     if number >= 0 and number <= 100:
 #         print(number)
+#         ###Fixing it
+#         break
 #
 #     else:
 #         print('Error: grade must be between 100 and 0')
@@ -326,15 +330,23 @@ d **=2
 # a = 0
 # while a < 1000:
 #     print(a)
+#     ##FIxing this
+#     a +=1
 
 ################Did not test for a = 500 condition
+###Edge case - Checking for a condition that is not common
+
 # a = 0
 # while a < 1000:
 #     a +=1
 #     if a < 500:
 #         print("Boom", a)
-#     if a > 500:
+#     elif a > 500:
 #         print('Pow', a)
+#     elif a == 500:
+#         print("WAM")
+
+
 
 ##Slide 35
 # pass
