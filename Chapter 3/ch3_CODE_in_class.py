@@ -349,31 +349,35 @@ d **=2
 
 
 ##Slide 35
-# pass
-# pass
-# pass
+# import random
+# # from random import randint, random
+# print(random.random()) #Number between 0 and 1
+# print(random.randint(1,20))
+
 
 
 ##Slide 36
 ##Dice rolling simulator
-# pass
-# pass
-# pass
+from random import randint
+
+for roll in range(100):
+    print(randint(1,100))
+
 
 
 ##Guess the number game
-# import random
-#
-# myNumber = random.randint(1,100)
-# count = 0
-#
-# while True:
-#     count += 1
-#     userNumber = int(input("Enter your guess: "))
-#     if userNumber < myNumber:
-#         print("Too small!")
-#     elif userNumber > myNumber:
-#         print("Too large!")
-#     else:
-#         print("Congratulations! You've got it in", count, "tries!")
-#         break
+import random
+
+myNumber = random.randint(1,100)
+count = 0
+
+while True:
+    count += 1
+    userNumber = int(input("Enter your guess: "))
+    if userNumber < myNumber:
+        print("Too small!")
+    elif userNumber > myNumber:
+        print("Too large!")
+    else:
+        print("Congratulations! You've got it in", count, "tries!")
+        break
