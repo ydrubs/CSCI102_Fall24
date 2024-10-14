@@ -1,10 +1,12 @@
 # #Slide 3
 # string = 'Hello to you'
-# for pass: #Iterate through the individual characters
-#     print(pass)
+# for char in string: #Iterate through the individual characters
+#     print(char, end = '')
 
 # print()
-# print(pass) #print the character at the specified index
+# print(len(string)) #print the character at the specified index
+#
+# print(string[0])
 
 # myNum = 10
 # for digit in myNum: #Demonstrate that an integer cannot be broken down into digits like a string can
@@ -13,25 +15,25 @@
 
 #Slide 4
 # name = 'Skywalker'
-# print(pass) #The first letter is 'S'
+# print(name[0]) #The first letter is 'S'
 #
+# print(len(name))
+# print(name[-1]) #negative index works backwards
+# print(name[-2]) #Takes one less than the last value
+#
+# print(name[len(name)-1])
 # print(pass)
-# print(pass) #Results in an index error
-# print(pass) #Takes one less than the last value
-
-# print(pass) #  last character is 'r'
-# print(pass) #  Second to last character is 'e'
 
 ##Slide 5
-# data = 'Hi there!'
+data = 'Hi there!'
 #
 # ###Loop Through the indexes of the string
-# for pass:
-#     print(pass)
-#
+for index in range(len(data)):
+    print(index, data[index])
+
 # ##Loop through the elements of the string
-# for pass:
-#     print(pass)
+# for char in data:
+#     print(char)
 
 
 ##Slide 7
