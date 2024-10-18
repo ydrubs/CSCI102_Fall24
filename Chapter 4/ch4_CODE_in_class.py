@@ -25,11 +25,11 @@
 # print(pass)
 
 ##Slide 5
-data = 'Hi there!'
+# data = 'Hi there!'
 #
 # ###Loop Through the indexes of the string
-for index in range(len(data)):
-    print(index, data[index])
+# for index in range(len(data)):
+#     print(index, data[index])
 
 # ##Loop through the elements of the string
 # for char in data:
@@ -50,17 +50,18 @@ for index in range(len(data)):
 # immutable = 'Hood' #...But you can override the variable itself
 # print(immutable)
 
+
+
 ##Slide 9
 # name = 'myfile.txt'
-# # print(pass)
-# # print(pass)
-# # print(pass)
-# # print(pass)
+# print(name[0:])
+# print(name[0:1]) #stops one short of the second argument
+# print(name[0:2])
+# print(name[2:6:2])
 
-# print(pass)
-# print(pass)
-#
-# print(pass)
+# print(name[len(name)::-1])
+
+# print(name[0:3]+name[0:3])
 # print(pass)
 
 ##Slide 9 - Try to run your own experiments with the string below
@@ -74,31 +75,40 @@ for index in range(len(data)):
 ##Slide 11
 # superhero = 'incredible HULK'
 #
-# print(pass)
-# print(pass)
-# print(pass
-
+# print(superhero.upper())
+# print(superhero.lower())
+# print(superhero.title())
+# print(superhero.split())
 
 ##Slide 12
-# address = '123 Fake St.'
-#
-# for pass:
-#     print(pass)
+address = '123 Fake St.'
+
+# for char in address:
+#     print(char.isdigit())
+# #
+# for char in address:
+#     print(char, char.isupper())
 #
 # for char in address:
-#     print(pass
-#
+#     print(char, char.islower())
+
 # for char in address:
-#     print(pass)
+     # print(char, char.isalnum())
+
+# print(address[0:3].isnumeric()) #returns True
+
+
 
 
 ##Slide 13
 ##Map a directory of files by using the split command
-# string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
-# string = pass
-# print(pass)
+string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
+string = string.split('\\')
+print(string)
+print(string[0])
+
 #
-# print(pass)
+print('\\'.join(string))
 
 
 ##Slide 13/14 - STRING METHODS SUMMARY
