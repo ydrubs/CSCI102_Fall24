@@ -81,7 +81,7 @@
 # print(superhero.split())
 
 ##Slide 12
-address = '123 Fake St.'
+# address = '123 Fake St.'
 
 # for char in address:
 #     print(char.isdigit())
@@ -102,13 +102,13 @@ address = '123 Fake St.'
 
 ##Slide 13
 ##Map a directory of files by using the split command
-string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
-string = string.split('\\')
-print(string)
-print(string[0])
-
+# string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
+# string = string.split('\\')
+# print(string)
+# print(string[0])
 #
-print('\\'.join(string))
+# #
+# print('\\'.join(string))
 
 
 ##Slide 13/14 - STRING METHODS SUMMARY
@@ -124,59 +124,109 @@ print('\\'.join(string))
 # from a hidden base, have won
 # their first victory against
 # the evil Galactic Empire."""
-#
-# print(pass)
-# print(pass)
-# print(pass)
-#
-# print(pass)
-# print(pass) #SInce war first appears at character 67, we can see what characters 60-69 are
+
+# print('war' in text)
+# print('empire' in text)
+# print('Empire' in text)
+# #
+# print(text.index('war'))
+# print(text[60:70]) #SInce war first appears at character 67, we can see what characters 60-69 are
+
+
+
 
 ##Slide16
-##he variable below defines a list data structure. We will lean more about this in chapter 5
+##the variable below defines a list data structure. We will lean more about this in chapter 5
 # fileList = ['myfile.txt', 'myprogram.exe', 'yourfile.txt']
-# for pass:
-#     if pass:
-#         print(pass)
+# for file in fileList:
+#     if '.txt' in file:
+#         print(file)
+
+
+
 
 ##Slide 17
 # import this
+# string = """Beautiful is better than ugly.
+# Explicit is better than implicit.
+# Simple is better than complex.
+# Complex is better than complicated.
+# Flat is better than nested.
+# Sparse is better than dense.
+# Readability counts.
+# Special cases aren't special enough to break the rules.
+# Although practicality beats purity.
+# Errors should never pass silently.
+# Unless explicitly silenced.
+# In the face of ambiguity, refuse the temptation to guess.
+# There should be one-- and preferably only one --obvious way to do it.
+# Although that way may not be obvious at first unless you're Dutch.
+# Now is better than never.
+# Although never is often better than *right* now.
+# If the implementation is hard to explain, it's a bad idea.
+# If the implementation is easy to explain, it may be a good idea.
+# Namespaces are one honking great idea -- let's do more of those!"""
 
+# e_or_a_count = 0
 
+# for letter in string:
+#     # print(letter, end = '')
+#     if 'a' in letter or 'e' in letter:
+#         e_or_a_count +=1
+#
+# print(e_or_a_count)
 
+# string = string.split()
+# print(string)
+#
+# for word in string:
+#     if 'e' or 'a' in string:
+#         e_or_a_count +=1
+#
+# print(e_or_a_count)
 
 #Slide 21
 # f = open('myfile.txt', 'w')
 # f.write("1. Justin Herbert $52.5 million\n2. Lamar Jackson $52 million\n3.Jalen Hurts $51 million")
 # f.close()
 
+
+####My try
+
+
+
 #Slide 23
-# import random
-# f = open('integers.txt', 'w')
+import random
+f = open('integers.txt', 'w')
 
-# pass
+for count in range(500):
+    n = random.randint(1,500)
+    f.write(str(n) + '\n')
 
-# f.close()
+f.close()
+
 
 ##Slide 24
 # f = open("myfile.txt", 'r')
 # #
 # # ##Since the text file is broken up into lines, readline() adds an extra carrige return (\n)
 # while True: #As long as there's data to read, read it
-#     pass
-#     pass
-#         pass
-
-#     print(pass)
+#     line = f.readline()
+#     if line == '':
+#         break
+#     print(line)
 
 ##Slide 25
 ## f = open('integers2.txt', 'r') #COMMENT OUT TO SEE WHY THIS FILE CANNOT BE READ
-# f = open('integers.txt', 'r')
-# theSum = 0
-
+f = open('integers.txt', 'r')
+theSum = 0
+for line in f:
+    # print(line)
+    number = int(line)
+    theSum += number
 # pass
 
-# print('The sum is', theSum)
+print('The sum is', theSum)
 
 ##Slide26
 ###GENERATE SOME DATA TO BE READ
