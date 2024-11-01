@@ -1,48 +1,84 @@
 ##Slide 5 - Defining lists
+# fruits = ['apples', 'orange', 'kiwi']
+# profile = [24, 'Wichita', [3.21, 5.6]]
+# freinds = []
+#
+# print(fruits)
+# print(f'my favotire fruits are {fruits[0]} {fruits[1]}')
+# print(profile[2][1])
+
 
 ##Storing the result of a math operation in a list
 # import math
 # x = 2
-# lst = [pass]
-# print(pass)
-# print(pass)
-# print(pass)
-# print(pass)
+# lst = [x, math.sqrt(x), math.pi]
+# print(lst)
+# print(lst[2])
+# print(lst[x])
+# print(lst[x+1]) #Index error
+
 
 #Slide 6 - Your turn
+# superheroes = ['Batman', 'Spiderman', 'Superman', 'Incredibles']
+# superheroes.append('Iron Man')
+# superheroes.append('Ghost Rider')
+# print(superheroes)
+#
+# #Reference list elements by item (directly)
+# for superhero in superheroes:
+#     print(superhero)
+
+
+##Reference list element by index
+# for i in range(len(superheroes)):
+#     print(i, superheroes[i])
+    # print(superheroes[3], superheroes[i]) ##Important difference
+
 
 
 
 ##Slide 7
 # first = [1,2,3,4]
-# second = pass
-# print(pass)
+# second = list(range(1,1001))
+# print(second)
 
-# print(pass) #returns the biggest value in the list
-# print(pass) #returns the smallest value in a list
-# print(pass) #returns the sum of a list
+# for number in second:
+#     print(number)
+
+# print(max(second)) #returns the biggest value in the list
+# print(min(second)) #returns the smallest value in a list
+# print(sum(second)) #returns the sum of a list
+
+##What is the average of the list
+# avg = sum(second)/len(second)
+# print(avg)
+
 
 ##Build a list from a string
-# message = 'Hello There'
-# message_lst = pass
+# message = 'Hello There, good moeninrg'
+# message_lst = list(message)
 # print(message_lst)
 #
 # #Other list operations
-# print(pass) #chek the number of elements in a list
-# print(pass) #Combine two lists together with a '+' sign
+# print(len(message_lst)) #chek the number of elements in a list
+# print(message_lst + list('freind')) #Combine two lists together with a '+' sign
 
+# message_lst = ''.join(message_lst) #Combine back into a string
+# print(message_lst)
 
 #Slide 8
 ##This example allows you to add people to a roster by looping through the number of people that get added
 # roster_size = int(input("Enter the number of people to add: ")) #Get input about number
-# roster_lst = pass #Create an empty list to hold the people
+# roster_lst = [] #Create an empty list to hold the people
 #
-# pass: #Loop through however many people we said we wanted to add
+# for name in range(roster_size): #Loop through however many people we said we wanted to add
 #     new_member = input("What is the new members name? ") #Get the persons name
-#     pass #Add the person to the end of the roster list
+#     roster_lst.append(new_member) #Add the person to the end of the roster list
 #
-# print(pass) #print results
+# print(roster_lst) #print results
+# roster_lst.append('Fabrel')
 
+# print(roster_lst)
 
 ##This example generates n random numbers between 1 and 365 and puts them into a list
 # from random import randint
@@ -61,10 +97,13 @@
 
 ##Slide 10 - Skill Review for exercise 5.1
 ##Stopping a loop when the 'enter' key is pressed.
-# while True:
-#     data = input("Enter some data: ")
-#     if data == '':
-#         break
+while True:
+    data = input("Enter some data: ")
+    if data == '':
+        break
+    # data = int(data)
+    # lst.append(data)
+
 
 
 
