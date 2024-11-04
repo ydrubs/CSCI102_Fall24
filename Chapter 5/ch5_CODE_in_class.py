@@ -80,15 +80,18 @@
 
 # print(roster_lst)
 
+
+
 ##This example generates n random numbers between 1 and 365 and puts them into a list
 # from random import randint
 # number_lst = [] #empty list to hold numbers
 # n = 21 #How much elements to put in the list
-
-# pass
-#     pass #Choose random number
-#     pass #append that number to list
-# print(pass)
+#
+# for i in range(n):
+#     number = randint(1,365) #Choose random number
+#     number_lst.append(number) #append that number to list
+#
+# print(number_lst)
 
 
 
@@ -97,10 +100,10 @@
 
 ##Slide 10 - Skill Review for exercise 5.1
 ##Stopping a loop when the 'enter' key is pressed.
-while True:
-    data = input("Enter some data: ")
-    if data == '':
-        break
+# while True:
+#     data = input("Enter some data: ")
+#     if data == '':
+#         break
     # data = int(data)
     # lst.append(data)
 
@@ -109,40 +112,47 @@ while True:
 
 
 #Slide 12 - Different operations and list slicing techniques that are possible
-# first = [1,2,3,4]
+first = [1,2,3,4]
 # print(len(first))
 # print(first[0])
-# print(pass)
-# first = pass
+# print(first[2:4])
+first = first + [5, 6]
+# print(first)
+# #
 #
-#
-# second = list(range(1,7))
-# print(pass)
-# print(pass) #Why do you think the 'is' keyword returns False here?
+second = list(range(1,7))
+# print(first == second) # TRUE because all the elements in first are also in second
+# print(first is second) #Why do you think the 'is' keyword returns False here?
+# print(id(first), id(second)) # Not the same place in memory
+# third = first # Third IS first
+# print(id(first), id(third))
+
 
 ##Searching through a list
-# print(pass)
-# print(pass)
-# print(pass)
+# print(1 in first) #True
+# print('one' in first) #False
+# print(int('1') in first) #False, Ture if int('1')
 
-# import random
-# csci102_Roster = ['Eliud', 'Jayce', 'Javier', 'Miguel', 'Colby', 'Ada', 'Aiden G', 'Francisco', 'Ruth', 'Ashley',
-#                   'Jackie', 'Allan', 'Anivar', 'Joscelyn', 'Dominic', 'Zahmari', 'Aiden P', 'Devin', 'Juan',
-#                   'Jordan', 'Edwin', 'Tye', 'Fabrel']
-# random_student = pass
-# print(pass)
-# print(pass)
+
+
+import random
+csci102_Roster = ['Eliud', 'Jayce', 'Javier', 'Miguel', 'Colby', 'Ada', 'Aiden G', 'Francisco', 'Ruth', 'Ashley',
+                  'Jackie', 'Allan', 'Anivar', 'Joscelyn', 'Dominic', 'Zahmari', 'Aiden P', 'Devin', 'Juan',
+                  'Jordan', 'Edwin', 'Tye', 'Fabrel']
+random_student = random.choice(csci102_Roster)
+# print(random_student)
+# print('Jordan' in csci102_Roster)
 #
-# print(pass} extra credit points go to {random_student}')
+# print(f'{random.randint(-20,20)} extra credit points goes to {random_student}')
 
 
 ##Slide 13 - Changing elements in a list
-# first = [1,2,3,4]
-# pass
-# print(first)
+first = [1,2,3,4]
+first[0] = 5
+print(first)
 
-# pass
-# print(pass)
+csci102_Roster[0] = 'Taylor Swift'
+print(csci102_Roster)
 
 
 ##Slide 14 - Manipulating through looping
