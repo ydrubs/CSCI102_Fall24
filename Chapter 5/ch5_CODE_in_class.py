@@ -236,9 +236,9 @@ from random import randint
 ##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more then once.
 # from random import randint
 #
-lst = []
-for i in range(20):
-    lst.append(randint(1,20))
+# lst = []
+# for i in range(20):
+#     lst.append(randint(1,20))
 # print(lst)
 
 
@@ -295,10 +295,10 @@ new_lst = []
 
 
 ##Slide 23 - Intro to Tuples
-cards = () #Empty tuple container
-cards = (6,7,8,9,10,'Jack') #Tuples of card ranks
-# cards = ((2,'hearts'), (8, 'spades'), ('Ace', 'Clubs')) #Tuple of tuples
-cars = ([2020, 'Chevy', 'Corvette'], [2023, 'Toyota', 'Prius']) #Tuple of lists
+# cards = () #Empty tuple container
+# cards = (6,7,8,9,10,'Jack') #Tuples of card ranks
+# # cards = ((2,'hearts'), (8, 'spades'), ('Ace', 'Clubs')) #Tuple of tuples
+# cars = ([2020, 'Chevy', 'Corvette'], [2023, 'Toyota', 'Prius']) #Tuple of lists
 
 # print(cards[0])
 # cards[0] = 'King' #Demonstrates you can't modify a tuple like you can a list
@@ -312,37 +312,37 @@ cars = ([2020, 'Chevy', 'Corvette'], [2023, 'Toyota', 'Prius']) #Tuple of lists
 
 ##SLide 25
 ###Building a deck of cards by combining tuples
-import random
-
-suit_tuple= ('hearts', 'diamomds', 'spades', 'clubs')
-rank_tuple = ('2', '3', '4', '5', '6', '7', '8','9', '10', 'jack', 'queen', 'king', 'ace')
-
-deck = []
-for suit in suit_tuple:
-    for rank in rank_tuple:
-        card = (rank, suit) #Temporary variable to store the current card in loop
-        deck.append(card) #Add this card to the deck list
-
-print(deck)
-print(deck[random.randint(0,len(deck))])
-
-random.shuffle(deck)
-print(deck)
-
-##Slide 26 (IN_CLASS_TUPLE PRACTICE)
-point1 = (6,6)
-point2 = (9,1)
-
-x1 = point1[0]
-y1 = point1[1]
-
-x2 = point2[0]
-y2 = point2[1]
-
-slope = (y2-y1)/(x2-x1)
-print(slope)
-
-slope_alt = (point2[1]-point1[1]/point2[0]-point1[0])
+# import random
+#
+# suit_tuple= ('hearts', 'diamomds', 'spades', 'clubs')
+# rank_tuple = ('2', '3', '4', '5', '6', '7', '8','9', '10', 'jack', 'queen', 'king', 'ace')
+#
+# deck = []
+# for suit in suit_tuple:
+#     for rank in rank_tuple:
+#         card = (rank, suit) #Temporary variable to store the current card in loop
+#         deck.append(card) #Add this card to the deck list
+#
+# print(deck)
+# print(deck[random.randint(0,len(deck))])
+#
+# random.shuffle(deck)
+# print(deck)
+#
+# ##Slide 26 (IN_CLASS_TUPLE PRACTICE)
+# point1 = (6,6)
+# point2 = (9,1)
+#
+# x1 = point1[0]
+# y1 = point1[1]
+#
+# x2 = point2[0]
+# y2 = point2[1]
+#
+# slope = (y2-y1)/(x2-x1)
+# print(slope)
+#
+# slope_alt = (point2[1]-point1[1]/point2[0]-point1[0])
 
 
 
@@ -350,41 +350,87 @@ slope_alt = (point2[1]-point1[1]/point2[0]-point1[0])
 
 ##Slide 28
 ##Defining a simple function
-
-
-
-
-##Slide 29
-##Pass arguments into a function (no limit on amount or data type)
-
+# def greeting():
+#     # return "hi everybody"
+#     print('hi everyone')
+#     return 'bye'
+#
+# # print(greeting()) # Use '()' if you want to CALL a function
+# hi =  greeting()
+# print(hi)
 
 
 
 
 
 ##Slide 30
+##Pass arguments into a function (no limit on amount or data type)
+# def greeting(first_name, last_name):
+#     print('Hello')
+#     return f'Call me {last_name}, {first_name}, {last_name}'
+#     print("Nope!") # Won't get to hear becasue of the return above it
+
+#
+# name = input('What is your name: ')
+# name1 = input('What is your last name: ')
+# message = greeting('James', "bond")
+# # message = greeting(name, name1)
+# print(message)
+
+
+##Slide 31
 ##Pass default values into a function (order of keyword parameters vs. positional parameters matters!)
 ##positional parameters need to be defines FIRST!
+# def greeting(first_name = 'Jon', last_name = 'Doe'):
+#     print('Hello')
+#     return f'Call me {last_name}, {first_name}, {last_name}'
+#     # print("Nope
+
+# message = greeting()
+# message = greeting(first_name='James')
+# message = greeting(first_name='James', last_name='Bond') #BOTH argumenets are keyword
+
+# message = greeting(first_name='James', 'Bond')
+# message = greeting('James', last_name="Bond") # Positnal arguments must come BEFORE keyword arguments
+# print(message)
 
 
 
 
 ##Try it:
 """Write a function called find_bigger that accepts two decimal number and returns the bigger of the two"""
+##5 minutes
+# a = 1.3
+# b = 3.1
+#
+# if a > b:
+#     print(a)
+# else:
+#     print(b)
+
+# def find_bigger(a,b):
+#     print('hello, thank you for using the comparaison calulator, \n')
+#     if a > b:
+#         return a
+#     else:
+#         return b
+#
+# res = find_bigger(b = 1.3, a = 3.1)
+# print(res)
 
 
-##Slide 31
+
+##Slide 32
 """Write a function named only_ints that takes two parameters.
 Your function should return True if both parameters are integers, and False otherwise."""
-
-
-
-
-
-
-
-# ##Slide 32
-##Write a function that removes digits from a string and returns it back with only alphabetic characters.
+# def only_ints(a,b):
+#     if str(a).isdigit() and str(b).isnumeric():
+#         return True
+#
+#     return False
+#
+# res = only_ints(4.3, '2.4')
+# print(res)
 
 
 
@@ -392,9 +438,35 @@ Your function should return True if both parameters are integers, and False othe
 
 
 ##Slide 33
+"""Write a function that removes digits from a string and returns it back with only alphabetic characters."""
+# def remove_number(word):
+#     new_word = ''
+#     for char in word:
+#         if not char.isnumeric():
+#             new_word += char
+#     return new_word
+#
+# print(remove_number('123'))
+
+
+
+
+
+##Slide 34
 ##Write a function that accepts an integer and returns the sum of its digits
+def sum_digits(number):
+    number = str(number)
+    sum = 0
+    for digit in number:
+        to_int = int(digit)
+        sum += to_int
+    return sum
+print(sum_digits(2456))
 
 
+###Index into a word from the back (for 5.4 exercise)
+my_word = 'hello'
+print(my_word[-1])
 
 
 
