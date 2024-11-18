@@ -466,7 +466,7 @@ print(sum_digits(2456))
 
 ###Index into a word from the back (for 5.4 exercise)
 my_word = 'hello'
-print(my_word[-1])
+print(my_word[-1], my_word[-2])
 
 
 
